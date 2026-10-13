@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>¡Quita del medio! · El idle de sartenazos</title>
+<title>El Juego de la Sartén · El idle de sartenazos</title>
 <meta name="description" content="¡Aparta a sartenazos a la gente que se para en medio! El juego idle más gracioso para Android. Un juego de Buski87.">
 <link rel="icon" href="img/icono.png">
-<meta property="og:title" content="¡Quita del medio!">
+<meta property="og:title" content="El Juego de la Sartén">
 <meta property="og:description" content="¡Aparta a sartenazos a la gente que se para en medio!">
 <meta property="og:image" content="img/destacada_es.png">
 <style>
@@ -81,7 +81,7 @@
 <body>
 <div class="wrap">
   <nav>
-    <a class="brand" href="#"><img src="img/icono.png" alt=""><span>¡Quita del medio!</span></a>
+    <a class="brand" href="#"><img src="img/icono.png" alt=""><span>El Juego de la Sartén</span></a>
     <div class="lang" role="group" aria-label="Idioma / Language">
       <button type="button" data-set-lang="es" aria-pressed="true">ES</button>
       <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
@@ -90,7 +90,7 @@
 
   <header class="hero">
     <div>
-      <h1 class="title" data-es="¡Quita del medio!" data-en="Out of My Way!">¡Quita del medio!</h1>
+      <h1 class="title" data-es="El Juego de la Sartén" data-en="The Frying Pan Game">El Juego de la Sartén</h1>
       <p class="tagline" data-es="¡Aparta a sartenazos a la gente que se para en medio! El idle más gracioso."
          data-en="Clear everyone who stops in your way with a frying pan! The funniest idle game.">¡Aparta a sartenazos a la gente que se para en medio! El idle más gracioso.</p>
       <div class="cta">
@@ -101,7 +101,7 @@
         <a class="btn alt" href="#capturas" data-es="Ver capturas" data-en="See screenshots">Ver capturas</a>
       </div>
     </div>
-    <img class="feature-img" id="feature" src="img/destacada_es.png" alt="¡Quita del medio!">
+    <img class="feature-img" id="feature" src="img/destacada_es.png" alt="El Juego de la Sartén">
   </header>
 
   <section id="capturas">
@@ -121,13 +121,13 @@
         <p data-es="Lanza al gato, pide ayuda a un niño y un bebé, la zapatilla de la vecina, tartas en la cara…"
            data-en="Throw the cat, call a kid and a baby for help, the neighbor's slipper, pies to the face…">Lanza al gato, pide ayuda a un niño y un bebé, la zapatilla de la vecina, tartas en la cara…</p></div>
       <div class="card"><div class="emoji">🏙️</div>
-        <h3 data-es="10 zonas" data-en="10 areas">10 zonas</h3>
-        <p data-es="Calle Mayor, mercado, metro, supermercado, parque, playa, estación de tren, fiesta del pueblo, aeropuerto…"
-           data-en="Main Street, market, subway, supermarket, park, beach, train station, village party, airport…">Calle Mayor, mercado, metro, supermercado, parque, playa, estación de tren, fiesta del pueblo, aeropuerto…</p></div>
+        <h3 data-es="11 zonas" data-en="11 areas">11 zonas</h3>
+        <p data-es="Calle Mayor, mercado, metro, supermercado, parque, playa, estación de tren, pueblo de veraneo, fiesta del pueblo, aeropuerto…"
+           data-en="Main Street, market, subway, supermarket, park, beach, train station, summer village, village party, airport…">Calle Mayor, mercado, metro, supermercado, parque, playa, estación de tren, pueblo de veraneo, fiesta del pueblo, aeropuerto…</p></div>
       <div class="card"><div class="emoji">🏢</div>
         <h3 data-es="Jefes que todos conocemos" data-en="Bosses we all know">Jefes que todos conocemos</h3>
-        <p data-es="Los vecinos de cada piso, el administrador de la finca y su derrama, la encargada de caja, tu cuñado…"
-           data-en="The neighbors on every floor, the building manager and his fees, the checkout supervisor, your brother-in-law…">Los vecinos de cada piso, el administrador de la finca y su derrama, la encargada de caja, tu cuñado…</p></div>
+        <p data-es="Los vecinos de cada piso, el administrador de la finca y su derrama, la encargada de caja, tu cuñado, tus suegros…"
+           data-en="The neighbors on every floor, the building manager and his fees, the checkout supervisor, your brother-in-law, your in-laws…">Los vecinos de cada piso, el administrador de la finca y su derrama, la encargada de caja, tu cuñado, tus suegros…</p></div>
       <div class="card"><div class="emoji">⭐</div>
         <h3 data-es="Siempre algo nuevo" data-en="Always something new">Siempre algo nuevo</h3>
         <p data-es="Misiones diarias, nuevas protagonistas, delantales con bonus y mudanzas de barrio para llegar más lejos."
@@ -158,7 +158,7 @@
 </footer>
 
 <script>
-  const SHOTS = ["1_calle", "2_gato", "3_vecina", "4_tarta", "5_ayuda", "6_jefes"];
+  const SHOTS = ["1_calle", "2_gato", "3_vecina", "4_tarta", "5_ayuda", "6_jefes", "7_pueblo"];
   function setLang(lang) {
     document.documentElement.lang = lang;
     document.querySelectorAll("[data-" + lang + "]").forEach(el => { el.textContent = el.dataset[lang]; });
@@ -166,7 +166,7 @@
     document.getElementById("feature").src = "img/destacada_" + lang + ".png";
     document.getElementById("gallery").innerHTML = SHOTS
       .map(s => '<img loading="lazy" src="img/' + lang + '/' + s + '.png" alt="">').join("");
-    document.title = lang === "es" ? "¡Quita del medio! · El idle de sartenazos" : "Out of My Way! · The frying pan idle game";
+    document.title = lang === "es" ? "El Juego de la Sartén · El idle de sartenazos" : "The Frying Pan Game · The frying pan idle game";
     try { localStorage.setItem("lang", lang); } catch (e) {}
   }
   document.querySelectorAll("[data-set-lang]").forEach(b => b.addEventListener("click", () => setLang(b.dataset.setLang)));
